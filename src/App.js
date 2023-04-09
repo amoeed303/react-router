@@ -4,16 +4,22 @@ import { Footer } from "./components/Footer";
 import { Home } from "./components/Home";
 import { ProductList } from "./components/ProductList";
 import { ProductDetails } from "./components/ProductDetails";
+import { Contact } from "./components/Contact";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/products" element={<ProductList />}></Route>
-        <Route path="/" element={<ProductDetails />}></Route>
-      </Routes>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/products" element={<ProductList />}></Route>
+          <Route path="/products/id" element={<ProductDetails />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+        </Routes>
+      </main>
+      <Footer />
     </div>
   );
 }
