@@ -1,3 +1,3 @@
 export const Footer = () => {
-  return <Footer>@2023</Footer>;
+  return <footer>@2023</footer>;
 };

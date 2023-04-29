@@ -8,7 +8,7 @@ export const Header = () => {
         <span>Route Mate</span>
       </Link>
       <nav className="navigation">
-        <NavLink to="/" className="link">
+        <NavLink to="/" className="link" end>
           Home
         </NavLink>
         <NavLink to="/products" className="link">
