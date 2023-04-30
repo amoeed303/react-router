@@ -5,7 +5,7 @@ export const Header = () => {
     <header>
       <Link to="/" className="logo">
         <img src={Logo} alt="Routemate logo" />
-        <span>Route Mate</span>
+        <span>Router Buddy</span>
       </Link>
       <nav className="navigation">
         <NavLink to="/" className="link" end>
